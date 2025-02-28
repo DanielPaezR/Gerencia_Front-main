@@ -63,6 +63,7 @@ function PaginaIniciar() {
                 onChange={(e)=> {setUsuario (e.target.value)}}/>
             </div>
 
+
             <div className="input_pass">
                 <img className="password" src={password} alt="password"/>
                 <input className="inputs" type="password" placeholder="Password"
@@ -72,6 +73,7 @@ function PaginaIniciar() {
             </div>
             
             <ButtonLogin label="Ingresar" />
+
             
             <div className="cardCrear">
                 <button onClick={goToGoogle} htmlFor="ButtonGoogle" className="btnGoogle">
