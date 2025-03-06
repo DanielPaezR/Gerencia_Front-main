@@ -14,7 +14,7 @@
 
 /* Mitad izquierda: Logo */
 .left {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,24 +30,24 @@
 
 /* Mitad derecha: Login con fondo morado */
 .right {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #2575fc, #cd07e7);
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
     color: white;
 }
 
 /* Título animado "Login to your Account" */
 .right h2 {
     font-family: 'Comic Neue', cursive;
-    font-size: 52px;
+    font-size: 45px;
     font-weight: bold;
     margin-bottom: 20px;
     animation: floatText 2s infinite alternate ease-in-out;
     position: relative;
-    top: -90px; /* Lo sube un poco */
+    top: -70px; /* Lo sube un poco */
 }
 
 /* Animación del texto */
