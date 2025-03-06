@@ -47,8 +47,12 @@
     margin-bottom: 20px;
     animation: floatText 2s infinite alternate ease-in-out;
     position: relative;
-    top: -70px; /* Lo sube un poco */
+    top: -70px; 
+    white-space: nowrap; 
+    text-align: center; 
+    max-width: 90%; 
 }
+
 
 /* Animación del texto */
 @keyframes floatText {
@@ -60,14 +64,30 @@
     }
 }
 
-/* Inputs centrados en la mitad de la pantalla derecha */
-.right input {
+/* Contenedor de los inputs con iconos */
+.input-container {
+    display: flex;
+    align-items: center;
     width: 70%;
-    padding: 12px;
-    margin: 10px 0;
-    font-size: 16px;
-    border: none;
+    background-color: white;
     border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Iconos dentro de los inputs */
+.input-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos de los inputs */
+.input-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
     text-align: center;
 }
 
