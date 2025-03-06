@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Mitad izquierda: Logo */
+.left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.logo-inicio {
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mitad derecha: Login con fondo morado */
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #2575fc, #cd07e7);
+    color: white;
+}
+
+/* Título animado "Login to your Account" */
+.right h2 {
+    font-family: 'Comic Neue', cursive;
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: floatText 2s infinite alternate ease-in-out;
+    position: relative;
+    top: -90px; /* Lo sube un poco */
+}
+
+/* Animación del texto */
+@keyframes floatText {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/* Inputs centrados en la mitad de la pantalla derecha */
+.right input {
+    width: 70%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Botón más pequeño y con efecto */
+.right button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: white;
+    color: #6a11cb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.right button:hover {
+    transform: scale(1.05);
+    background: #ddd;
+}
