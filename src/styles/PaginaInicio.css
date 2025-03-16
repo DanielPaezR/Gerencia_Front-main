@@ -28,14 +28,16 @@
     object-fit: contain;
 }
 
+
 /* Mitad derecha: Login con fondo morado */
 .right {
     width: 40%;
+    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    background: rgba(234, 204, 244, 1);
     color: white;
 }
 
@@ -43,6 +45,8 @@
 .right h2 {
     font-family: 'Comic Neue', cursive;
     font-size: 45px;
+    color: black;
+    background-color: #6b11cb00;
     font-weight: bold;
     margin-bottom: 20px;
     animation: floatText 2s infinite alternate ease-in-out;
@@ -87,6 +91,7 @@
     border: none;
     outline: none;
     width: 100%;
+    color: black;
     font-size: 16px;
     text-align: center;
 }
