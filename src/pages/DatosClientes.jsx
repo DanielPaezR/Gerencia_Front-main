@@ -52,7 +52,7 @@ const DatosClientes = () => {
             <img src={clientesIcon} alt="Clientes" className="menu-icon" />
             <span>CLIENTES</span>
           </div>
-          <div className="menu-item" onClick={() => handleMenuClick("/productos")}>
+          <div className="menu-item" onClick={() => handleMenuClick("/AñadirProducto")}>
             <img src={productosIcon} alt="Productos" className="menu-icon" />
             <span>PRODUCTOS</span>
           </div>

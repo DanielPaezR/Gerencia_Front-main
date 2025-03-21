@@ -96,12 +96,7 @@ const Ventas = () => {
       <div className="main-content">
         <Sidebar onFilter={handleFilter} /> {/* Barra lateral de filtros */}
         <div className="content">
-          <div className="section-description">
-            <h2>🚴‍♂️ Ventas de Bicicletas 🚴‍♀️</h2>
-            <p>Encuentra la bicicleta y accesorios perfectos para tus aventuras sobre ruedas. ¡Explora y elige la tuya!</p>
-          </div>
-
-          <h1>Productos en Venta</h1>
+          <h1>Gestion De Productos</h1>
           <div className="products-grid">
             {productosFiltrados.map((producto, index) => (
               <div key={index} className="product" onClick={() => abrirModal(producto)} style={{ cursor: 'pointer' }}>

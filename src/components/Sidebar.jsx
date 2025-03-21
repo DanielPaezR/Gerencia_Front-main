@@ -50,7 +50,7 @@ const Sidebar = ({ onFilter }) => {
 
       <button
         className="add-product-button"
-        onClick={() => navigate("/clients")}
+        onClick={() => navigate("/AñadirProducto")}
       >
         Añadir Producto
       </button>
