@@ -30,7 +30,6 @@ function PaginaIniciar() {
     const goToFacebook = () => {
         navigate("/paginaFacebook");
     };
-  
     
     const respuesta = () => {
       MySwal.fire({

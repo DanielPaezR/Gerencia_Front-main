@@ -1,3 +1,159 @@
-.clientes {
-    color: black;
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f9;
+    font-family: 'Comic Neue', cursive;
+    height: 100vh;
+    display: flex;
+}
+
+/* Contenedor principal */
+.form-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Barra lateral */
+.left-sidebar {
+    background-color: #d8cff7;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Logo - Modificado para hacerlo más grande y centrado */
+.logo {
+    width: 250px; 
+    margin: 160px auto; 
+    display: block; 
+}
+
+
+.button-container {
+    border: 2px dashed #c084fc;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update-btn,
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #a78bfa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.update-btn:hover,
+.register-btn:hover {
+    background-color: #7c3aed;
+}
+
+
+.checkbox-group {
+    margin-top: 20px;
+    border: 2px dashed #c084fc;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.checkbox-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Contenedor del formulario */
+.form-box {
+    background: white;
+    padding: 30px;
+    flex: 1;
+    border-left: 2px solid #c084fc;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Título */
+.form-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #7c3aed;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Diseño de columnas */
+.form-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr; /* Reduce el ancho de cada columna */
+    gap: 20px;
+}
+
+/* Ajuste del tamaño de cada sección */
+.form-section {
+    border: 2px dashed #c084fc;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 350px; /* Aumenta la altura */
+}
+
+/* Ajuste de altura de los inputs */
+.form-input {
+    width: 100%;
+    padding: 12px; /* Aumenta la altura del campo */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+/* Botón de enviar */
+.submit-button {
+    display: flex;
+    justify-content: center;
+    grid-column: span 2;
+    margin-top: 20px;
+}
+
+.submit-button button {
+    padding: 10px 20px;
+    background-color: #9333ea;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit-button button:hover {
+    background-color: #7c3aed;
 }
