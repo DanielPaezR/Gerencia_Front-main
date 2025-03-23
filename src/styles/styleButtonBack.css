@@ -1,0 +1,15 @@
+.btnBack{
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(156, 153, 236, 1);
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8%;
+    cursor: pointer;
+}

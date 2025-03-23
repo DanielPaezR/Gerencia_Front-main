@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Mitad izquierda: Logo */
+.left {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.logo-inicio {
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mitad derecha: Login con fondo morado */
+.right {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(234, 204, 244, 1);
+    color: white;
+}
+
+/* Título animado "Login to your Account" */
+.right h2 {
+    font-family: 'Comic Neue', cursive;
+    font-size: 45px;
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: floatText 2s infinite alternate ease-in-out;
+    position: relative;
+    top: -70px;
+    white-space: nowrap;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* Animación del texto */
+@keyframes floatText {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/* Contenedor de los inputs con iconos */
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border-radius: 25px;
+    padding: 12px;
+    margin: 10px 0;
+    background: transparent; /* Eliminamos el fondo blanco */
+    border: 2px solid white; /* Opcional: Borde blanco para destacar */
+    box-shadow: none; /* Eliminamos cualquier sombra */
+}
+
+/* Iconos dentro de los inputs */
+.input-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Estilos de los inputs */
+.input-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Comic Neue', cursive;
+    background: transparent; /* Eliminamos cualquier fondo blanco */
+}
+
+/* Botón estilizado */
+.right button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-family: 'Comic Neue', cursive;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right button:hover {
+    transform: scale(1.05);
+    background: #4a0f9a;
+}
