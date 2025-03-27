@@ -1,6 +1,6 @@
 
 import { useNavigate } from "react-router-dom";
-import "../styles/AñadirProducto.css"; // Ruta correcta al CSS
+import "../styles/AñadirProducto.css";
 import logo from "../assets/Logo G.png"; 
 import searchIcon from "../assets/search.png"; // Ícono de búsqueda
 import viewIcon from "../assets/visualizar.png"; // Ícono de vista
@@ -11,7 +11,7 @@ const DatosClientes = () => {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/inicio");
+    navigate("/ventas");
   };
 
   const handleView = (id) => {

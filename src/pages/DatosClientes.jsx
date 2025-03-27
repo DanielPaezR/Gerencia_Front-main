@@ -30,46 +30,36 @@ const DatosClientes = () => {
 
   const handleAddClient = () => {
     console.log("Añadir nuevo cliente");
-    // Navegar a la página de añadir cliente
-    // navigate("/agregar-cliente");
+    navigate("/clientes");
   };
 
-  const handleMenuClick = (route) => {
-    navigate(route);
+  const handleBack = () => {
+    navigate("/ventas");
   };
+  
 
   // Datos de ejemplo para los clientes (todos con el mismo nombre como en la imagen)
   const clientes = Array(6).fill({ id: "122", nombre: "Laura Sofia Mora Ruiz" });
 
   return (
-    <div className="main-container">
-      <div className="sidebar">
-        <div className="logo-container">
-          <img src={logo} alt="AllBike Logo" className="logo" />
-        </div>
-        <div className="menu-items">
-          <div className="menu-item" onClick={() => handleMenuClick("/clientes")}>
-            <img src={clientesIcon} alt="Clientes" className="menu-icon" />
-            <span>CLIENTES</span>
-          </div>
-          <div className="menu-item" onClick={() => handleMenuClick("/AñadirProducto")}>
-            <img src={productosIcon} alt="Productos" className="menu-icon" />
-            <span>PRODUCTOS</span>
-          </div>
-        </div>
-      </div>
+    <div className="datosClientes-container">
+      <aside className="left-sidebar-DatosClientes">
+        <img src={logo} alt="AllBike Logo" className="logo" />
+        <button className="add-client-button" onClick={handleAddClient}>
+          Añadir Cliente
+        </button>
+        <button className="back-button" onClick={handleBack}>Volver</button>
+      </aside>
 
-      <div className="content">
+      <div className="contentDatosClientes">
         <div className="content-header">
-          <h1>DATOS CLIENTES</h1>
+          <div className="titleDatosClientes">
+            <h1>DATOS CLIENTES</h1>
+          </div>
+
           <div className="user-profile">
-            <div className="user-info">
-              <span className="user-name">Juan Perez</span>
-              <span className="user-role">Admin</span>
-            </div>
-            <div className="user-avatar">
-              <img src={userIcon} alt="User" />
-            </div>
+            <span className="user-role">Admin</span>
+            <img src={userIcon} alt="User" />
           </div>
         </div>
 
@@ -81,12 +71,6 @@ const DatosClientes = () => {
           />
           <button className="search-button">
             <img src={searchIcon} alt="Search" />
-          </button>
-        </div>
-
-        <div className="add-client-container">
-          <button className="add-client-button" onClick={handleAddClient}>
-            + Añadir Cliente
           </button>
         </div>
 

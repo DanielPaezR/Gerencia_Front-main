@@ -6,13 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #f3f3f9;
-    font-family: 'Comic Neue', cursive;
-    height: 100vh;
-    display: flex;
-}
-
 /* Contenedor principal */
 .form-container {
     display: flex;
@@ -131,6 +124,7 @@ body {
     width: 100%;
     padding: 12px; /* Aumenta la altura del campo */
     font-size: 14px;
+    color: black;
     border: 1px solid #ccc;
     border-radius: 5px;
     background: #f9f9f9;

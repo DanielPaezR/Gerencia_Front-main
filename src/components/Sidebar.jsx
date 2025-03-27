@@ -4,13 +4,9 @@ import { useState } from "react";
 const Sidebar = ({ onFilter }) => {
   const navigate = useNavigate();
 
-  const [category, setCategory] = useState("");
-  const [price, setPrice] = useState("");
-  const [brand, setBrand] = useState("");
-
   const handleFilter = () => {
     // Envía los filtros seleccionados al componente padre
-    onFilter({ category, price, brand });
+    onFilter = useState({ category, price, brand });
   };
 
   return (
@@ -19,7 +15,7 @@ const Sidebar = ({ onFilter }) => {
 
       <div className="filter-group">
         <label>Categoría</label>
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+        <select value={handleFilter} onChange={(e) => setCategory(e.target.value)}>
           <option value="">Todas</option>
           <option value="bicicletas">Bicicletas</option>
           <option value="accesorios">Accesorios</option>
@@ -28,7 +24,7 @@ const Sidebar = ({ onFilter }) => {
 
       <div className="filter-group">
         <label>Precio</label>
-        <select value={price} onChange={(e) => setPrice(e.target.value)}>
+        <select value={handleFilter} onChange={(e) => price(e.target.value)}>
           <option value="">Todos</option>
           <option value="0-500">$0 - $500</option>
           <option value="500-1000">$500 - $1000</option>
@@ -41,8 +37,8 @@ const Sidebar = ({ onFilter }) => {
         <input
           type="text"
           placeholder="Ej: Montaña, Urbana"
-          value={brand}
-          onChange={(e) => setBrand(e.target.value)}
+          value={handleFilter}
+          onChange={(e) => brand(e.target.value)}
         />
       </div>
 
