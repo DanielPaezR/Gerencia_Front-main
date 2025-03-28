@@ -5,8 +5,9 @@ import Ventas from "./pages/Ventas";
 import AñadirProducto from "./pages/AñadirProducto";
 
 import DatosClientes from "./pages/DatosClientes";
-
+import Dashboard from "./pages/Dashboard";
 import Clientes from "./pages/Clientes";
+import CustomerEditForm from "./pages/CustomerEditForm";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Route path="/DatosClientes" element={<DatosClientes />} />
       <Route path="/AñadirProducto" element={<AñadirProducto />} />
       <Route path="/clientes" element={<Clientes />} />
+      <Route path="/customerEditForm" element={<CustomerEditForm />} />
+      <Route path="/dashboard" element={<Dashboard/>} />
     </Routes>
   );
 }
