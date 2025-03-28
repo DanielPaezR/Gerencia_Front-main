@@ -11,6 +11,13 @@
     height: 100vh;
     width: 100vw;
 }
+.form-login{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background: rgba(234, 204, 244, 1);
+}
+
 
 /* Mitad izquierda: Logo */
 .left {
@@ -74,7 +81,7 @@
     border-radius: 25px;
     padding: 12px;
     margin: 10px 0;
-    background: transparent; /* Eliminamos el fondo blanco */
+    background: white;
     border: 2px solid white; /* Opcional: Borde blanco para destacar */
     box-shadow: none; /* Eliminamos cualquier sombra */
 }

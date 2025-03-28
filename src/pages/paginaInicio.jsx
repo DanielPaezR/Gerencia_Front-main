@@ -43,7 +43,7 @@ const PaginaInicio = () => {
           Login to your <br /> Account
         </h2>
 
-        <form onSubmit={handleLogin}>
+        <form className= "form-login"  onSubmit={handleLogin}>
           <div className="input-container">
             <img src={userIcon} alt="User" className="input-icon" />
             <input
