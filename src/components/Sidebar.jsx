@@ -97,6 +97,12 @@ const Sidebar = ({ onFilter }) => {
         >
           Datos clientes
         </button>
+        <button
+          className="Dashboard-button"
+          onClick={() => navigate("/Dashboard")}
+        >
+          Estadísticas
+        </button>
       </div>
     </div>
   );

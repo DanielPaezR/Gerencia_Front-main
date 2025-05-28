@@ -6,7 +6,7 @@ import AñadirProducto from "./pages/AñadirProducto";
 
 import DatosClientes from "./pages/DatosClientes";
 import Dashboard from "./pages/Dashboard";
-import Clientes from "./pages/Clientes";
+import Clientes from "./pages/ClientForm";
 import CustomerEditForm from "./pages/CustomerEditForm";
 
 function App() {
