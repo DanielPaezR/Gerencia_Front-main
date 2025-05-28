@@ -4,7 +4,7 @@ import logo from "../assets/Logo G.png";
 import { useNavigate } from "react-router-dom";
 
 // URL de la API configurable mediante variable de entorno
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3000/api/customers";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api/customers";
 
 const ClientForm = () => {
   const navigate = useNavigate();
