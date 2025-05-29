@@ -58,7 +58,7 @@ const Dashboard = () => {
   ];
 
   React.useEffect(() => {
-    fetch("http://localhost:3000/salesorderheader/monthly") 
+    fetch("http://localhost:3000/api/salesorderheader/monthly") 
       .then(res => res.json())
       .then(json => {
         const result = json.result;
@@ -76,7 +76,7 @@ const Dashboard = () => {
 const [dataTopProducts, setDataTopProducts] = React.useState([]);
 
 React.useEffect(() => {
-  fetch("http://localhost:3000/salesOrderDetail/top-products") 
+  fetch("http://localhost:3000/api/salesOrderDetail/top-products") 
     .then(res => res.json())
     .then(json => {
       const result = json.result;
@@ -94,7 +94,7 @@ React.useEffect(() => {
 const [dataCategories, setDataCategories] = React.useState([]);
 
 React.useEffect(() => {
-  fetch("http://localhost:3000/salesorderheader/by-category")
+  fetch("http://localhost:3000/api/salesorderheader/by-category")
     .then(res => res.json())
     .then(json => {
       const result = json.result;
@@ -112,7 +112,7 @@ React.useEffect(() => {
 const [topSalesMonth, setTopSalesMonth] = React.useState(null);
 
 React.useEffect(() => {
-  fetch("http://localhost:3000/top-sales-month")
+  fetch("http://localhost:3000/api/top-sales-month")
     .then(res => res.json())
     .then(json => setTopSalesMonth(json.result))
     .catch(error => {
@@ -123,7 +123,7 @@ React.useEffect(() => {
 const [avgShippingTime, setAvgShippingTime] = React.useState(null);
 
 React.useEffect(() => {
-  fetch("http://localhost:3000/average-shipping-time")
+  fetch("http://localhost:3000/api/average-shipping-time")
     .then(res => res.json())
     .then(json => setAvgShippingTime(Number(json.result)))
     .catch(err => {
