@@ -162,12 +162,15 @@ const Dashboard = () => {
         {/* Top Productos Más Vendidos */}
         <div className="chart-container">
           <h2 className="chart-title">Productos Más Vendidos (Unidades)</h2>
-          <ResponsiveContainer width="100%" height={300}>
+          <ResponsiveContainer width="100%" height={500}>
             <BarChart data={dataTopProducts} layout="vertical">
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis type="number" />
-              <YAxis dataKey="name" type="category" width={150} />
-              <Tooltip />
+              <YAxis type="category" dataKey="name" width={0} tick={false} />
+              <Tooltip
+                formatter={(value, name, props) => [`${value} unidades`, 'Cantidad']}
+                labelFormatter={(label) => `Producto: ${label}`}
+              />
               <Bar dataKey="quantity" barSize={30}>
                 {dataTopProducts.map((entry, index) => (
                   <Cell
@@ -178,6 +181,7 @@ const Dashboard = () => {
               </Bar>
             </BarChart>
           </ResponsiveContainer>
+
         </div>
 
         {/* Ventas por Categoría */}
