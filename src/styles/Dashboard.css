@@ -1,83 +1,78 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .dashboard-container {
-    display: flex;
-    min-height: 100vh;
-    background-color: white;
-    color: black;
-    width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  width: 100vw;
+  font-size: 0.8rem; /* mejor acá que en el selector universal */
 }
 
 /* Barra lateral */
 .left-sidebar-dashboard {
-    background-color: #d8cff7;
-    width: 300px;
-    height: 100vh; /* Asegura que ocupe toda la altura */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Centra el contenido verticalmente */
-    position: fixed;
-    top: 0;
-    left: 0;
-    gap: 20px; /* Espacio entre el logo y el botón */
+  background-color: #d8cff7;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  gap: 20px;
 }
 
 /* Logo */
 .logo {
-    width: 200px; /* Ajuste opcional si necesitas modificar el tamaño */
+  width: 250px;
+  margin-top: 20px;
 }
 
 /* Botón */
 .button-return {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    background: linear-gradient(45deg, rgba(204, 244, 204, 1), rgba(184, 224, 184, 1), rgba(164, 204, 164, 1));
-    color: rgb(0, 0, 0);
-    transition: all 0.3s ease-in-out;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  background: linear-gradient(45deg, rgba(204, 244, 204, 1), rgba(184, 224, 184, 1), rgba(164, 204, 164, 1));
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
 }
 
 .button-return:hover {
-    background: linear-gradient(45deg, rgba(164, 204, 164, 1), rgba(184, 224, 184, 1), rgba(204, 244, 204, 1));
-    transform: scale(1.05);
+  background: linear-gradient(45deg, rgba(164, 204, 164, 1), rgba(184, 224, 184, 1), rgba(204, 244, 204, 1));
+  transform: scale(1.05);
 }
 
-/* Logo - Centrado en los primeros 100vh */
-.logo {
-    width: 250px; 
-    margin-top: 20px;
-}
-
-/* Contenido principal (se ajusta para no solaparse con el aside) */
+/* Contenido principal */
 .dashboard-content {
-    flex: 1;
-    padding: 2rem;
-    margin-left: 300px; /* Ajustar margen para que no se superponga con el sidebar */
+  flex: 1;
+  padding: 2rem;
+  margin-left: 300px;
 }
 
-.dashboard-main-title{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    
+.dashboard-main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-/* Ajuste para evitar que las gráficas se solapen con el navbar */
 .chart-container {
-    margin-top: 80px;
+  width: 80%;
+  margin: 80px auto 0 auto;
+  overflow: visible; /* <- para prevenir cortes por si acaso */
 }
+
 
 .chart-title {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
-
